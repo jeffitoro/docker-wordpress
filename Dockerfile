@@ -4,7 +4,7 @@ FROM wordpress:php7.4-apache
 RUN pecl install xdebug && docker-php-ext-enable xdebug
  
 # Install Less for WP-CLI
-RUN apt-get update && apt-get -y install less
+RUN apt-get update && apt-get -y install less vim
  
 # Install WP-CLI
 RUN curl -s -o /usr/local/bin/wp \
